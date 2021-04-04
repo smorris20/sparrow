@@ -1,0 +1,89 @@
+---
+title: "sparrowMark"
+author: "Sean Morris"
+date: "4/4/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(iris)
+str(iris)
+
+head(iris)
+iris[95:105,]
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(iris$Sepal.Length, iris$Sepal.Width)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+# Further Testing with Header 1
+
+For the basic information above, which was created when I first started the R markdown file, I modified the values to match datasets I would use.
+
+*Testing Italics* and **testing bolds** for R markdown, specifically using the asterisks. Also, _testing italics_ and __testing bolds__ using the underscores as well.
+
+## Further Testing with Header 2
+
+An **unordered list** of animals:
+
+  * Cats
+    + Russian Blue
+  * Dogs
+    + Beagle
+    + Pug
+  * Lizards
+    + Bearded Dragon
+
+An __ordered list__ of tasks:
+
+1. Take a shower
+    + Wash face
+2. Brush teeth
+    + Floss
+    + Mouthwash
+3. Put together lunch
+
+### Further Testing with Header 3
+```{r}
+tails <- c(3.8, 4.2, 4.3, 3.5, 2.9, 0.2, 3.6, 4.9, 4.5, 3.1)
+mean(tails)
+difference <- tails - mean(tails)
+difference
+```
+
+`r length(tails)` cat tail lengths were provided and analyzed above.
+
+Refer to the [weather](https://www.weather.gov/) by checking the NWS website, https://www.weather.gov/.
+
+Quote:
+
+> _He who would climb a ladder must begin at the bottom._
+
+### Small table displaying the numbers of cats and dogs owned by my friends.
+
+Cat | Dog
+--- | ---
+ 0  |  3
+ 2  |  0
+ 1  |  5
+ 1  |  2
+ 1  |  0
+ 
+This R markdown file shows my understanding of the different functions available when creating R markdown files.
