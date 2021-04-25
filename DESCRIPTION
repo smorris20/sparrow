@@ -1,13 +1,15 @@
 Package: sparrow
 Title: Simple Statistics
-Version: 0.0.0.9000
+Version: 1.0.0
 Authors@R: 
     person(given = "Sean",
            family = "Morris",
            role = c("aut", "cre"),
            email = "first.last@example.com")
 Description: Provides quick statistic information for a provided dataset, like mean, standard dev, variances, quartiles, critical values, and allow confidence intervals to be created for the dataset.
-Depends: R >= 3.6.1
+Depends: R (>= 3.6)
+Imports:
+	stats (>= 3.6)
 License: CC0
 Encoding: UTF-8
 LazyData: true
